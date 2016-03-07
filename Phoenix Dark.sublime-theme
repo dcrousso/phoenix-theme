@@ -552,11 +552,6 @@
         "settings": ["bold_folder_labels"],
         "font.bold": true
     },
-    // {
-    //     "class": "sidebar_label",
-    //     "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-    //     "font.bold": true
-    // },
     // Sidebar entry selected
     {
         "class": "sidebar_label",
@@ -622,39 +617,75 @@
     {
         "class": "disclosure_button_control",
         "content_margin": [8, 8],
-        "layer0.texture": "Theme - Phoenix/Phoenix Dark/group-closed.png",
-        "layer0.opacity": 0.4
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/fold-closed.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Phoenix/Phoenix Dark/group-closed.png",
-        "layer0.opacity": 0.8
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/fold-closed-hover.png"
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Phoenix/Phoenix Dark/group-closed.png",
-        "layer0.opacity": 1.0
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/fold-closed-selected.png"
     },
     // Sidebar group open
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Phoenix/Phoenix Dark/group-open.png",
-        "layer0.opacity": 1.0
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/fold-open.png"
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Phoenix/Phoenix Dark/group-open.png",
-        "layer0.opacity": 1.0
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/fold-open-hover.png"
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/fold-open-selected.png"
+    },
+    // Sidebar folder closed
+    {
+        "class": "icon_folder",
+        "content_margin": [8, 8],
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/group-closed.png",
+        "layer0.opacity": 0.4
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/group-closed.png",
+        "layer0.opacity": 0.8
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/group-closed.png",
+        "layer0.opacity": 1.0
+    },
+    // Sidebar folder open
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/group-open.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_folder",
+        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded", "hover"]}],
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/group-open.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_folder",
+        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded", "selected"]}],
         "layer0.texture": "Theme - Phoenix/Phoenix Dark/group-open.png",
         "layer0.opacity": 1.0
     },
@@ -1285,9 +1316,9 @@
         "layer0.texture": "Theme - Phoenix/Phoenix Dark/colors/red/sidebar-row-selected.png"
     },
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "settings": ["phoenix_color_red", "phoenix_color_expanded_folder"],
-        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - Phoenix/Phoenix Dark/colors/red/group-open.png",
         "layer0.opacity": 0.8
     },
@@ -1428,9 +1459,9 @@
         "layer0.texture": "Theme - Phoenix/Phoenix Dark/colors/green/sidebar-row-selected.png"
     },
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "settings": ["phoenix_color_green", "phoenix_color_expanded_folder"],
-        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - Phoenix/Phoenix Dark/colors/green/group-open.png",
         "layer0.opacity": 0.75
     },
@@ -1571,9 +1602,9 @@
         "layer0.texture": "Theme - Phoenix/Phoenix Dark/colors/blue/sidebar-row-selected.png"
     },
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "settings": ["phoenix_color_blue", "phoenix_color_expanded_folder"],
-        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - Phoenix/Phoenix Dark/colors/blue/group-open.png",
         "layer0.opacity": 0.7
     },
@@ -1714,9 +1745,9 @@
         "layer0.texture": "Theme - Phoenix/Phoenix Dark/colors/yellow/sidebar-row-selected.png"
     },
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "settings": ["phoenix_color_yellow", "phoenix_color_expanded_folder"],
-        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - Phoenix/Phoenix Dark/colors/yellow/group-open.png",
         "layer0.opacity": 0.7
     },
@@ -1857,9 +1888,9 @@
         "layer0.texture": "Theme - Phoenix/Phoenix Dark/colors/orange/sidebar-row-selected.png"
     },
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "settings": ["phoenix_color_orange", "phoenix_color_expanded_folder"],
-        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - Phoenix/Phoenix Dark/colors/orange/group-open.png",
         "layer0.opacity": 0.75
     },
@@ -2000,9 +2031,9 @@
         "layer0.texture": "Theme - Phoenix/Phoenix Dark/colors/pink/sidebar-row-selected.png"
     },
     {
-        "class": "disclosure_button_control",
+        "class": "icon_folder",
         "settings": ["phoenix_color_pink", "phoenix_color_expanded_folder"],
-        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - Phoenix/Phoenix Dark/colors/pink/group-open.png",
         "layer0.opacity": 0.75
     },
@@ -2170,14 +2201,6 @@
         // "layer0.opacity": 1.0,
         // "content_margin": [8, 8]
         "content_margin": [0, 0]
-    },
-    {
-        "class": "icon_folder",
-        "content_margin": [0,0]
-    },
-    {
-        "class": "icon_folder_loading",
-        "content_margin": [0,0]
     }
 
 ]
