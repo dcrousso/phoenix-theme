@@ -2199,6 +2199,23 @@
         // layer0.texture is filled in by code with the relevant icon name
         "layer0.opacity": 1.0,
         "content_margin": [8, 8]
+    },
+    // Remove left/right tab buttons
+    {
+        "class": "show_tabs_dropdown_button",
+        "settings": ["phoenix_no_scroll_icons"],
+        "content_margin": 0,
+        "layer0.inner_margin": 0
+    },
+    {
+        "class": "scroll_tabs_right_button",
+        "settings": ["phoenix_no_scroll_icons"],
+        "content_margin": 0
+    },
+    {
+        "class": "scroll_tabs_left_button",
+        "settings": ["phoenix_no_scroll_icons"],
+        "content_margin": 0
     }
 
 ]
