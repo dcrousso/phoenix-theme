@@ -411,14 +411,14 @@
         "layer0.texture": "Theme - Phoenix/Phoenix Light/sidebar-bg.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [1, 1, 2, 1],
-        "content_margin": [0, 0, 1, 0]
+        "content_margin": [0, 3, 1, 0]
     },
     // Sidebar tree
     {
         "class": "sidebar_tree",
         "row_padding": [8, 4],
-        "indent": 16,
-        "indent_offset": 16,
+        "indent": 15,
+        "indent_offset": 15,
         "indent_top_level": false
     },
     {
@@ -575,39 +575,79 @@
     {
         "class": "disclosure_button_control",
         "content_margin": [8, 8],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/group-closed.png",
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/fold-closed.png",
         "layer0.opacity": 0.60,
         "layer0.inner_margin": 0
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/group-closed.png",
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/fold-closed.png",
         "layer0.opacity": 1.0
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/group-closed.png",
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/fold-closed.png",
         "layer0.opacity": 1.0
     },
     // Sidebar group open
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/group-open.png",
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/fold-open.png",
         "layer0.opacity": 1.0
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/group-open.png"
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/fold-open.png"
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/fold-open.png",
+        "layer0.opacity": 1.0
+    },
+    // Sidebar folder closed
+    {
+        "class": "icon_folder",
+        "content_margin": [8, 8],
+        "layer0.texture": "Theme - Phoenix/Phoenix Light/group-closed.png",
+        "layer0.opacity": 0.6
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.texture": "Theme - Phoenix/Phoenix Light/group-closed.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Phoenix/Phoenix Light/group-closed.png",
+        "layer0.opacity": 1.0
+    },
+    // Sidebar folder open
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+        "layer0.texture": "Theme - Phoenix/Phoenix Light/group-open.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_folder",
+        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded", "hover"]}],
+        "layer0.texture": "Theme - Phoenix/Phoenix Light/group-open.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "icon_folder",
+        "attributes": ["expanded"],
+        "parents": [{"class": "tree_row", "attributes": ["expanded", "selected"]}],
         "layer0.texture": "Theme - Phoenix/Phoenix Light/group-open.png",
         "layer0.opacity": 1.0
     },
@@ -1172,51 +1212,6 @@
         "parents": [{"class": "tree_row", "attributes": ["hover", "selected"]}],
         "layer0.texture": "Theme - Phoenix/Phoenix Light/file-close-selected.png"
     },
-    // SIDEBAR - GENERAL FILE ICONS
-    // Sidebar group closed
-    {
-        "class": "disclosure_button_control",
-        "settings": ["phoenix_color_darkblue"],
-        "content_margin": [8, 8],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/colors/blue/group-closed.png",
-        "layer0.opacity": 0.60,
-        "layer0.inner_margin": 0
-    },
-    {
-        "class": "disclosure_button_control",
-        "settings": ["phoenix_color_darkblue"],
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/colors/blue/group-closed.png",
-        "layer0.opacity": 1.0
-    },
-    {
-        "class": "disclosure_button_control",
-        "settings": ["phoenix_color_darkblue"],
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/colors/blue/group-closed-selected.png"
-    },
-    // Sidebar group open
-    {
-        "class": "disclosure_button_control",
-        "settings": ["phoenix_color_darkblue"],
-        "attributes": ["expanded"],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/colors/blue/group-open.png",
-        "layer0.opacity": 1.0
-    },
-    {
-        "class": "disclosure_button_control",
-        "settings": ["phoenix_color_darkblue"],
-        "attributes": ["expanded"],
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/colors/blue/group-open.png"
-    },
-    {
-        "class": "disclosure_button_control",
-        "settings": ["phoenix_color_darkblue"],
-        "attributes": ["expanded"],
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/colors/blue/group-open-selected.png"
-    },
     // QUICK PANEL
     {
         "class": "quick_panel_label",
@@ -1458,51 +1453,6 @@
         "parents": [{"class": "tree_row", "attributes": ["hover", "selected"]}],
         "layer0.texture": "Theme - Phoenix/Phoenix Light/file-close-selected.png"
     },
-    // SIDEBAR - GENERAL FILE ICONS
-    // Sidebar group closed
-    {
-        "class": "disclosure_button_control",
-        "settings": ["phoenix_color_blue"],
-        "content_margin": [8, 8],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/colors/blue/group-closed.png",
-        "layer0.opacity": 0.60,
-        "layer0.inner_margin": 0
-    },
-    {
-        "class": "disclosure_button_control",
-        "settings": ["phoenix_color_blue"],
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/colors/blue/group-closed.png",
-        "layer0.opacity": 1.0
-    },
-    {
-        "class": "disclosure_button_control",
-        "settings": ["phoenix_color_blue"],
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/colors/blue/group-closed-selected.png"
-    },
-    // Sidebar group open
-    {
-        "class": "disclosure_button_control",
-        "settings": ["phoenix_color_blue"],
-        "attributes": ["expanded"],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/colors/blue/group-open.png",
-        "layer0.opacity": 1.0
-    },
-    {
-        "class": "disclosure_button_control",
-        "settings": ["phoenix_color_blue"],
-        "attributes": ["expanded"],
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/colors/blue/group-open.png"
-    },
-    {
-        "class": "disclosure_button_control",
-        "settings": ["phoenix_color_blue"],
-        "attributes": ["expanded"],
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Phoenix/Phoenix Light/colors/blue/group-open-selected.png"
-    },
     // QUICK PANEL
     {
         "class": "quick_panel_label",
@@ -1592,17 +1542,25 @@
     {
         "class": "icon_file_type",
         // layer0.texture is filled in by code with the relevant icon name
-        // "layer0.opacity": 1.0,
-        // "content_margin": [8, 8]
-        "content_margin": [0, 0]
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+    // Remove left/right tab buttons
+    {
+        "class": "show_tabs_dropdown_button",
+        "settings": ["phoenix_no_scroll_icons"],
+        "content_margin": 0,
+        "layer0.inner_margin": 0
     },
     {
-        "class": "icon_folder",
-        "content_margin": [0,0]
+        "class": "scroll_tabs_right_button",
+        "settings": ["phoenix_no_scroll_icons"],
+        "content_margin": 0
     },
     {
-        "class": "icon_folder_loading",
-        "content_margin": [0,0]
+        "class": "scroll_tabs_left_button",
+        "settings": ["phoenix_no_scroll_icons"],
+        "content_margin": 0
     }
 
 ]
