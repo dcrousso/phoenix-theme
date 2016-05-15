@@ -628,7 +628,7 @@
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Phoenix/Phoenix Dark/fold-closed-selected.png"
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/fold-closed-hover.png"
     },
     // Sidebar group open
     {
@@ -646,7 +646,7 @@
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Phoenix/Phoenix Dark/fold-open-selected.png"
+        "layer0.texture": "Theme - Phoenix/Phoenix Dark/fold-open-hover.png"
     },
     // Sidebar folder closed
     {
